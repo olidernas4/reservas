@@ -49,7 +49,7 @@ const ReservaForm = ({ sala, onReservar }) => {
   const horasDisponibles = Array.from({ length: 11 }, (_, i) => i + 8);
 
   return (
-    <div className="inputRedondeado">
+    <div className="inputRedon">
       <h2>Reservar Sala {sala.nombre}</h2>
       <select value={startHour} onChange={(e) => setStartHour(e.target.value)}>
         <option value="">Selecciona hora inicio</option>
